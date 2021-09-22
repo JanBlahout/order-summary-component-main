@@ -40,6 +40,10 @@ The designs were created to the following widths:
 body {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
+
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .attribution {
@@ -50,17 +54,28 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-.background {
-  background-image: url(/images/pattern-background-desktop.svg);
-  background-size: cover;
+/* .background {
+  position: relative;
+} */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
 }
+
 .card {
-  max-width: 20%;
+  max-width: 400px;
   margin: auto;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   overflow: hidden;
   background-color: #fff;
+  position: absolute;
+  top: auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hero-img {
