@@ -3,4 +3,8 @@
     max-width: 90%;
     margin: 15px auto;
   }
+
+  .background {
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
 }
